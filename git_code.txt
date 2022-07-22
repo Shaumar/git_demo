@@ -1,0 +1,97 @@
+sumar@3rdf-sumar02 MINGW64 ~
+$ cd desktop
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop
+$ cd git-git-shayan
+bash: cd: git-git-shayan: No such file or directory
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop
+$ cd sshayan
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan
+$ git init
+Initialized empty Git repository in C:/Users/sumar/Desktop/sshayan/.git/
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (master)
+$ git add git_text
+fatal: pathspec 'git_text' did not match any files
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (master)
+$ git add git_test.text
+fatal: pathspec 'git_test.text' did not match any files
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (master)
+$ git add git_text.txt
+fatal: pathspec 'git_text.txt' did not match any files
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_text.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (master)
+$ git add git_text.txt.txt
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (master)
+$ git commit -m "random"
+[master (root-commit) 03752f9] random
+ Committer: Shayan Umar <sumar@seven.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git_text.txt.txt
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (master)
+$ git branch -M main
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (main)
+$ git remote add origin https://github.com/Shaumar/git_demo.git
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 228 bytes | 228.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Shaumar/git_demo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+sumar@3rdf-sumar02 MINGW64 ~/desktop/sshayan (main)
+$
